@@ -2,7 +2,7 @@
 document.addEventListener("DOMContentLoaded", () => {
   const notices = [
       {
-          title: "Task 1: Update Website",
+          title: "Task 1: lol Website",
           description: "Update the company website with the latest news and announcements.",
           link: "https://example.com/task1"
       },
