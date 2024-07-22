@@ -1,43 +1,65 @@
 /* styles.css */
 body {
-  font-family: Arial, sans-serif;
+  font-family: 'Roboto', sans-serif;
   margin: 0;
   padding: 0;
-  background-color: #f4f4f4;
+  background-color: #f0f2f5;
+  color: #333;
 }
 
 header {
-  background-color: #333;
+  background-color: #4CAF50;
   color: #fff;
   padding: 20px 0;
   text-align: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2.5em;
 }
 
 main {
-  margin: 20px;
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 0 20px;
 }
 
 section#notices {
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-columns: 1fr;
   gap: 20px;
 }
 
 .notice {
   background-color: #fff;
   border: 1px solid #ddd;
-  border-radius: 5px;
+  border-radius: 8px;
   padding: 20px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.notice:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .notice h2 {
   margin-top: 0;
+  font-size: 1.5em;
+  color: #4CAF50;
+}
+
+.notice p {
+  margin: 10px 0;
 }
 
 .notice a {
   color: #007BFF;
   text-decoration: none;
+  font-weight: bold;
 }
 
 .notice a:hover {
@@ -48,7 +70,7 @@ footer {
   background-color: #333;
   color: #fff;
   text-align: center;
-  padding: 10px 0;
+  padding: 15px 0;
   position: fixed;
   width: 100%;
   bottom: 0;
